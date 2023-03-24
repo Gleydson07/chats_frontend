@@ -10,6 +10,7 @@ export const Content = styled.div`
   overflow: hidden;
   padding: 4px 8px;
   width: 185px;
+  cursor: pointer;
 `;
 
 export const Metadata = styled.div`

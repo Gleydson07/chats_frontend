@@ -40,14 +40,12 @@ export const MenuMessageOption:React.FC<MenuMessageOptionProps> = ({
 
   return (
     <>
-      <Container
-        onClick={() => onClick(id)}
-      >
+      <Container>
         <Avatar src={avatar} alt="Imagem do usuário"/>
-        <Content>
+        <Content onClick={() => onClick(id)}>
           <Username title={username}>{username}</Username>
           <Metadata>
-            <LastMessage title={lastMessage}>{lastMessage}</LastMessage>
+            <LastMessage>{lastMessage}</LastMessage>
             <Timestamp>{timestamp}</Timestamp>
           </Metadata>
         </Content>
