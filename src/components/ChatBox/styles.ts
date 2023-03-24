@@ -41,5 +41,6 @@ export const ButtonControl = styled.button`
 `;
 
 export const ContentWrapper = styled.div`
+  position: relative;
   padding: 8px;
 `;

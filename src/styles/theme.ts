@@ -4,28 +4,46 @@ export const GlobalStyle = createGlobalStyle`
 
   :root{
     --black-400: #1E1E1E;
+    --black-200: #3a3a3a;
+    --brown-700: #502614;
     --brown-400: #69331B;
-    --green-400: #13e20e;
+    --brown-200: #a44f2b;
+    --brown-100: #b05800;
+    --orange-600: #b34a04;
+    --orange-500: #eb6105;
+    --orange-400: #ea7409;
+    --orange-300: #f89236;
+    --orange-200: #fbbb82;
+    --orange-100: #F8EDE4;    
+    --green-600: #0b7c07;
+    --green-500: #0d960a;
+    --green-400: #10ba0c;
     --green-200: #c5fbc4;
-    --orange-400: #F67B09;
-    --orange-300: #E9BA8F;
-    --orange-200: #F4D3B4;
-    --orange-100: #F8EDE4;
+    --red-600: #ae0000;
+    --red-500: #cc0000;
+    --red-400: #f20000;
+    --red-200: #ff7171;
     --gray-600: #4B4643;
-    --gray-400: #C2C2C2;
+    --gray-500: #8a837d;
+    --gray-300: #c8c8c8;
+    --gray-400: #bcbcbc;
     --gray-200: #E3E2E1;
+    --gray-100: #efefef;
     --white-400: #F7F7F7;
     --white-opacity-75: rgba(247, 247, 247, 0.75);
     --white-opacity-50: rgba(247, 247, 247, 0.50);
     --white-opacity-15: rgba(247, 247, 247, 0.15);
+    --white-opacity-10: rgba(247, 247, 247, 0.10);
     --black-opacity-75: rgba(0, 0, 0, 0.75);
     --black-opacity-50: rgba(0, 0, 0, 0.5);
     --black-opacity-35: rgba(0, 0, 0, 0.35);
     --black-opacity-15: rgba(0, 0, 0, 0.15);
     --transparent: transparent;
     --font-size-4: 0.25rem;
-    --font-size-8: 0.5rem;
+    --font-size-9: 0.56rem;
+    --font-size-10: 0.625rem;
     --font-size-12: 0.75rem;
+    --font-size-14: 0.875rem;
     --font-size-16: 1rem;
   }
 
@@ -36,44 +54,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html{
-    @media(max-width: 1080px) {
-      font-size: 93.75%;
-    }
-    @media(max-width: 720px) {
-      font-size: 87.5%;
-    }
-    @media(max-width: 600px) {
-      font-size: 81.25%;
-    }
-
+    font-size: 93.75%;
     scroll-behavior: smooth;
   }
 
   body{
     font-family: 'Roboto', sans-serif;
-
     -webkit-font-smoothing: antialiased;
-
     overflow-x: hidden;
-
-    &::-webkit-scrollbar { 
-      position: absolute;
-      display: visible;
-    }
-    
-    &::-webkit-scrollbar-thumb {
-      background-color: var(--black-400); 
-      border-radius: 4px; 
-      border: 1px solid var(--black-400);
-    }
-    
-    &::-webkit-scrollbar-track {
-      background: var(--black-400); 
-    }
-    
-    &::-webkit-scrollbar-track-piece{
-      background: transparent;
-    }
   }
 
   body, input, textarea, button{

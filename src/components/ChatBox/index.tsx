@@ -18,7 +18,7 @@ export const ChatBox:React.FC<ChatBoxProps> = ({show, children, onClickMinimize}
 
   return (
     <Container
-    show={show}
+      show={show}
     >
       <Header>
           <ButtonControl
@@ -27,7 +27,9 @@ export const ChatBox:React.FC<ChatBoxProps> = ({show, children, onClickMinimize}
             <MdOutlineMinimize size={24}/>
           </ButtonControl>
       </Header>
-      <ContentWrapper>
+      <ContentWrapper
+        id="chat-box"
+      >
         {children}
       </ContentWrapper>
     </Container>

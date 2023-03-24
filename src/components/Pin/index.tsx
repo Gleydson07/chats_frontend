@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { ballon } from '../../assets/svgs';
 
 import {
@@ -12,8 +12,8 @@ interface PinProps {
 }
 
 export const Pin:React.FC<PinProps> = ({show, onClick}) => {
-  const [count, setCount] = useState(1);
-  const [isAnimated, setIsAnimated] = useState(false);
+  const [count] = useState(1);
+  const [isAnimated] = useState(false);
 
   return (
     <Wrapper
